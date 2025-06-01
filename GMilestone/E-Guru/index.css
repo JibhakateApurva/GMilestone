@@ -1,0 +1,172 @@
+
+
+.Navbar1{
+    display:flex;
+    justify-content: space-between;
+    margin:40px 70px;
+}
+.Navbar2{
+    display:flex;
+    justify-content: space-between;
+    margin:40px 70px;
+}
+
+.logo{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.logo img{
+    height:30px;
+    width:30px;
+}
+
+.menu ul{
+    display:flex;
+    list-style-type: none;
+    gap:60px;
+}
+
+.but button{
+    padding:10px 20px;
+}
+
+.border{
+    border-left: 1px solid black;
+    font-weight:lighter;
+}
+
+.main{
+    margin:40px 70px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    /* position: relative; */
+    /* border:1px solid yellow; */
+    flex-warp:wrap;
+    flex-grow:1;
+}
+/* .left{
+    border:1px solid blue;
+} */
+.right{
+
+    position:relative;
+    height:400px;
+    
+}
+
+img[alt="two"]{
+    position: absolute;
+    z-index:1;
+    top:30px;
+    right:50px;
+ }
+img[alt="three"]{
+    position: absolute;
+    z-index:2;
+    top:28px;
+    right:120px;
+}
+img[alt="four"]{
+    position: absolute;
+    z-index:3;
+    top:20px;
+    right:30px;
+}
+
+.main button{
+    padding:10px 20px;
+}
+.below button{
+    padding:10px 20px;
+}
+
+img[alt="one"]{
+    position:absolute;
+    right:500px;
+}
+img[alt="five"]{
+    position:absolute;
+    bottom:10px;
+    right:450px;
+}
+img[alt="six"]{
+    position:absolute;
+    bottom:10px;
+    right:20px;
+}
+.footer{
+    display:flex;
+    color:white;
+    justify-content: space-evenly;
+    padding:50px;
+}
+.above{
+    display: flex; 
+    
+}
+.below{
+    display: none; 
+}
+@media screen and (max-width:600px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+    }
+}
+
+@media screen and (max-width:600px){
+    .main{
+        display:flex;
+        flex-direction:column;
+        
+    }
+    
+    .right{
+        position:relative;
+    }
+    .sep{
+        position:absolute;
+        right:-50px;
+        top:30px;
+    }
+    img[alt="five"]{
+        position:absolute;
+        left:0px;
+        bottom:0px;
+    }
+    img[alt="one"]{
+        position:absolute;
+        left:0px;
+        top:0px;
+    }
+    .below{
+        display:flex;
+    
+    }
+    .above{
+        display:none;
+    }
+}
+
+@media screen and (max-width:600px){
+    .Navbar1{
+        display:flex;
+        justify-content:space-between;
+        align-items:baseline;
+    }
+    .Navbar2{
+        display:none;
+    }
+}
+@media screen and (min-width:600px){
+    .Navbar2{
+        display:flex;
+    }
+    .Navbar1{
+        display:none;
+    }
+}
